@@ -8,8 +8,25 @@
 </head>
 <body>
   <h1>Hello Vue</h1>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/identicon.js/2.3.2/identicon.js"></script>
+  <div id="app">
+    <h3>My Identicon Generator</h3>
+    <div>
+      Input:
+      <input v-on:input="onInput">
+    </div>
+    <div>
+      Output:
+      <div v-html="identicon"></div>
+    </div>
+  </div>
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script> -->
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://cdn.rawgit.com/dmester/jdenticon/5bbdf8cb/dist/jdenticon.js"></script>
+  <!-- <script src="imperative.js"></script> -->
   <script src="index.js"></script>
 </body>
 </html>
