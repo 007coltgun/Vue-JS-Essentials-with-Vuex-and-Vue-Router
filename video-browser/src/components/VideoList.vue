@@ -1,9 +1,10 @@
 <template>
-  <ul class="list-group">
+  <ul class="list-group col-md-4">
     <VideoListItem
      v-for="video in videos"
      :key="video.id.videoId"
-     :video="video">
+     :video="video"
+     @videoSelect="onVideoSelect">
     </VideoListItem>
   </ul>
 </template>
@@ -18,6 +19,11 @@ export default {
   },
   components: {
     VideoListItem: VideoListItem
+  },
+  methods: {
+    onVideoSelect(video) {
+      this.$emit('videoSelect', video);
+    }
   }
 };
 </script>
