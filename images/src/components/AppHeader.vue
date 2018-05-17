@@ -3,11 +3,27 @@
     <a class="active item">
       Image Storage
     </a>
-  </div>
+
+    <div class="right menu">
+      <a href="#" class="ui item" @click="login">Login</a>
+    </div>
+  </div>  
 </template>
 
 <script>
-export default {};
+import { mapActions } from 'vuex'
+export default {
+  name: 'AppHeader',
+  // methods: {
+  //   login() {
+  //     debugger;
+  //     this.store.dispatch('login')
+  //   } 
+  // }
+  methods: {
+    ...mapActions(['login'])
+  }
+};
 </script>
 
 <style scoped>

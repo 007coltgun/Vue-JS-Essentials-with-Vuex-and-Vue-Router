@@ -3,3 +3,5 @@ Client ID
 
 Client secret:
 620fcde019d55223acbd8b78486b8bf1a154576f
+
+https://api.imgur.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&response_type=REQUESTED_RESPONSE_TYPE&state=APPLICATION_STATE
