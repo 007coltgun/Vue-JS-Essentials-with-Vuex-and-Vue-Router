@@ -14,12 +14,6 @@
 import { mapActions } from 'vuex'
 export default {
   name: 'AppHeader',
-  // methods: {
-  //   login() {
-  //     debugger;
-  //     this.store.dispatch('login')
-  //   } 
-  // }
   methods: {
     ...mapActions(['login'])
   }

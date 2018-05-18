@@ -1,15 +1,14 @@
 <template>
   <div id="app">
     <AppHeader></AppHeader>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import AppHeader from "./components/AppHeader";
-import store from './store';
 export default {
   name: "App",
-  store: store,
   components: {
     AppHeader: AppHeader
   }
